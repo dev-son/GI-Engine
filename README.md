@@ -5,6 +5,7 @@
 명명 방식에 자연스럽게 익숙해지는 것을 목표로 합니다.
 
 학습 내용과 복습 과제는 [`docs/LearningLog.md`](docs/LearningLog.md)에 계속 기록합니다.
+AI 멘토의 역할과 현재 진도는 [`AGENTS.md`](AGENTS.md)에 동기화합니다.
 
 현재 예제에는 다음 흐름만 들어 있습니다.
 
