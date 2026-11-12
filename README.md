@@ -1,6 +1,10 @@
-# WinAPI Starter
+# GI Engine
 
-Win32 API를 처음 연습할 때 사용할 수 있는 최소 C++ 프로젝트입니다.
+완성하지 못했던 GI Engine을 다시 만들며 WinAPI, DirectX, 게임 엔진 구조를
+차근차근 학습하는 C++ 프로젝트입니다. 최종적으로 언리얼 엔진의 구조와
+명명 방식에 자연스럽게 익숙해지는 것을 목표로 합니다.
+
+학습 내용과 복습 과제는 [`docs/LearningLog.md`](docs/LearningLog.md)에 계속 기록합니다.
 
 현재 예제에는 다음 흐름만 들어 있습니다.
 
@@ -25,10 +29,10 @@ Win32 API를 처음 연습할 때 사용할 수 있는 최소 C++ 프로젝트�
 `main.cpp`와 `GameAPI.cpp`는 기반 코드입니다. 게임을 먼저 만들어 본 뒤
 입력, 게임 루프, 시간, WinAPI, 렌더링 순서로 분석하고 직접 교체합니다.
 
-## Visual Studio 2022에서 빌드
+## Visual Studio 2026에서 빌드
 
 1. Visual Studio Installer에서 **C++를 사용한 데스크톱 개발**을 설치합니다.
-2. `winapi_starter.sln`을 엽니다.
+2. `GI-Engine.sln`을 엽니다.
 3. 상단 구성을 `Debug`, 플랫폼을 `x64`로 선택합니다.
 4. `F5` 또는 `Ctrl+F5`로 실행합니다.
 
@@ -39,7 +43,7 @@ Visual Studio의 **Developer PowerShell**에서 실행합니다.
 ```powershell
 cmake -S . -B build
 cmake --build build --config Debug
-.\build\Debug\winapi_starter.exe
+.\build\Debug\GI-Engine.exe
 ```
 
 Ninja 같은 단일 구성 생성기를 쓰는 경우 실행 파일은 보통 `build` 폴더 바로 아래에 생성됩니다.

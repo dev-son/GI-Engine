@@ -1,4 +1,8 @@
 /build/
 /.vs/
 /out/
+/x64/
+/GI-Engine/
+/Debug/
+/Release/
 *.user

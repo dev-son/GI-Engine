@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12224.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winapi_starter", "winapi_starter.vcxproj", "{76C1DDB1-9621-4E94-A5FD-B62454D80B51}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GI-Engine", "GI-Engine.vcxproj", "{76C1DDB1-9621-4E94-A5FD-B62454D80B51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
