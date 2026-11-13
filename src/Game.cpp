@@ -24,7 +24,7 @@ void Tick(float DeltaTime) {
 
 // Unreal의 AHUD::DrawHUD와 같은 역할로, 매 프레임 화면을 그립니다.
 void DrawHUD() {
-    ClearCanvas({25, 30, 45});
+    ClearCanvas({255, 255, 255});
     DrawRect({255, 110, 80}, PlayerX, PlayerY, PlayerSize, PlayerSize);
 }
 
