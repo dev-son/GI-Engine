@@ -49,6 +49,30 @@ void DrawRect(FColor Color, float X, float Y, float Width, float Height) {
          static_cast<int>(X + Width), static_cast<int>(Y + Height), Color);
 }
 
+void DrawCircle(FColor Color, float CenterX, float CenterY, float Radius) {
+    if (Radius <= 0.0f) {
+        return;
+    }
+
+    const COLORREF NativeColor = ToColorRef(Color);
+    HBRUSH Brush = CreateSolidBrush(NativeColor);
+    HPEN Pen = CreatePen(PS_SOLID, 1, NativeColor);
+    HGDIOBJ PreviousBrush = SelectObject(CurrentCanvas, Brush);
+    HGDIOBJ PreviousPen = SelectObject(CurrentCanvas, Pen);
+
+    Ellipse(
+        CurrentCanvas,
+        static_cast<int>(CenterX - Radius),
+        static_cast<int>(CenterY - Radius),
+        static_cast<int>(CenterX + Radius),
+        static_cast<int>(CenterY + Radius));
+
+    SelectObject(CurrentCanvas, PreviousPen);
+    SelectObject(CurrentCanvas, PreviousBrush);
+    DeleteObject(Pen);
+    DeleteObject(Brush);
+}
+
 namespace GameAPIInternal {
 void SetCanvas(HDC Canvas, int Width, int Height) {
     CurrentCanvas = Canvas;

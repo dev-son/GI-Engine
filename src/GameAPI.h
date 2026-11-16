@@ -20,3 +20,4 @@ enum class EKey {
 bool IsInputKeyDown(EKey Key);
 void ClearCanvas(FColor Color);
 void DrawRect(FColor Color, float X, float Y, float Width, float Height);
+void DrawCircle(FColor Color, float CenterX, float CenterY, float Radius);
